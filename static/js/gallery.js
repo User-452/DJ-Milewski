@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 galleryItem.appendChild(overlay);
             } else if (mediaType === 'videos') {
                 const video = document.createElement('video');
+                video.preload = 'metadata';
                 const source = document.createElement('source');
                 source.src = src;
                 source.type = 'video/mp4';
